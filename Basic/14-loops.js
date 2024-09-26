@@ -42,7 +42,15 @@ do {
 
 myArray = [1, 2, 3, 4]
 
+for (let value of myArray) {
+    console.log(value)
+}
+
 mySet = new Set(["Brais", "Moure", "mouredev", 37, true, "braismoure@mouredev.com"])
+
+for (let value of mySet) {
+    console.log(value)
+}
 
 myMap = new Map([
     ["name", "Brais"],
@@ -50,19 +58,11 @@ myMap = new Map([
     ["age", 37]
 ])
 
-myString = "¡Hola, JavaScript!"
-
-for (let value of myArray) {
-    console.log(value)
-}
-
-for (let value of mySet) {
-    console.log(value)
-}
-
 for (let value of myMap) {
     console.log(value)
 }
+
+myString = "¡Hola, JavaScript!"
 
 for (let value of myString) {
     console.log(value)

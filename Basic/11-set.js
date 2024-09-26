@@ -21,7 +21,9 @@ console.log(mySet)
 // Métodos comunes
 
 // add y delete
-
+//delete: Borra un elemento, hay que pasarle el valor, no el indice
+//devuelve un true si el elemento existe y se ha eliminado
+//devuelve un false si no existe el elemento
 mySet.add("https://moure.dev")
 
 console.log(mySet)
@@ -31,16 +33,16 @@ mySet.delete("https://moure.dev")
 console.log(mySet)
 
 console.log(mySet.delete("Brais"))
-console.log(mySet.delete(4))
+console.log(mySet.delete(4)) 
 
 console.log(mySet)
 
-// has
+// has: Comprueba si existe un valor en un Set
 
 console.log(mySet.has("Moure"))
 console.log(mySet.has("Brais"))
 
-// size
+// size: Tamaño del Set
 
 console.log(mySet.size)
 
@@ -49,7 +51,6 @@ let myArray = Array.from(mySet)
 console.log(myArray)
 
 // Convertir un array a set
-
 mySet = new Set(myArray)
 console.log(mySet)
 

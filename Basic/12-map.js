@@ -49,15 +49,15 @@ console.log(myMap)
 
 // keys, values y entries
 
-console.log(myMap.keys())
-console.log(myMap.values())
-console.log(myMap.entries())
+console.log(myMap.keys()) //Nombres de las claves
+console.log(myMap.values()) //Contenido de los valores
+console.log(myMap.entries()) //Todas las claves y valores
 
-// size
+// size: Tamaño del mapa
 
 console.log(myMap.size)
 
-// clear
+// clear: Eliminar el mapa
 
 myMap.clear()
 

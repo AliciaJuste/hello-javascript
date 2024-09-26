@@ -52,7 +52,7 @@ console.log(age)
 console.log(alias)
 
 // Sintaxis objects con valores predeterminados
-
+// No se crean las variables como para los arrays
 let { name2, age2, alias2, email = "email@email.com" } = person
 console.log(name2) // No existe
 console.log(age2)  // No existe
@@ -60,7 +60,7 @@ console.log(alias2)  // No existe
 console.log(email)
 
 // Sintaxis objects con nuevos nombres de variables
-
+// Poner nombre key y nombre nueva variable
 let { alias: alias3, name: name3, age: age3 } = person
 console.log(name3)
 console.log(age3)
@@ -90,7 +90,7 @@ console.log(name4)
 console.log(jobName)
 
 // Propagación (...)
-
+// Expandir elementos de un array u objeto a otro array o a otros objetos
 // Sintaxis arrays
 
 let myArray2 = [...myArray, 5, 6]

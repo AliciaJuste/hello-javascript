@@ -43,12 +43,12 @@ console.log(a < b) // Menor que
 console.log(a >= b) // Mayor o igual que
 console.log(a <= b) // Menor o igual que
 console.log(a == b) // Igualdad por valor
-console.log(a == 6)
-console.log(a == "6")
+console.log(a == 6) // Igualdad por valor, esto es true
+console.log(a == "6") // Igualdad por valor, esto también es true
 console.log(a == a)
 console.log(a === a) // Igualdad por identidad (por tipo y valor) o igualdad estricta
-console.log(a === 6)
-console.log(a === "6")
+console.log(a === 6) // Este da true porque compara con el valor 6 numérico
+console.log(a === "6") //Este ya da false por que compara a con el valor 6 pero en formato string
 console.log(a != 6) // Desigualdad por valor
 console.log(a !== "6") // Desigualdad por identidad (por tipo y valor) o desigualdad estricta
 console.log(0 == false)
@@ -74,7 +74,7 @@ Truthy values (valores verdaderos)
 Falsy values (valores falsos)
 
 - 0
--  0n
+- 0n
 - null
 - undefined
 - NaN (Not a Number)
@@ -85,6 +85,7 @@ Falsy values (valores falsos)
 // Operadores lógicos
 
 // and (&&)
+
 console.log(5 > 10 && 15 > 20)
 console.log(5 < 10 && 15 < 20)
 console.log(5 < 10 && 15 > 20)
@@ -95,7 +96,6 @@ console.log(5 > 10 || 15 > 20)
 console.log(5 < 10 || 15 < 20)
 console.log(5 < 10 || 15 > 20)
 console.log(5 > 10 || 15 > 20 || 30 > 40)
-
 console.log(5 > 10 && 15 > 20 || 30 < 40)
 
 // not (!)
@@ -105,6 +105,5 @@ console.log(!(5 > 10 && 15 > 20))
 console.log(!(5 > 10 || 15 > 20))
 
 // Operadores ternarios
-
 const isRaining = false
 isRaining ? console.log("Está lloviendo") : console.log("No está lloviendo")
